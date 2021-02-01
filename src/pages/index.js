@@ -89,7 +89,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="mailto:johndoe@gmail.com"
+            href="mailto:igor.tanv@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >

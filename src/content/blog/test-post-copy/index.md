@@ -2,7 +2,7 @@
 title: "Test Post"
 tags: ["Test", "Post"]
 description: "Test post"
-author: "Mary Sue"
+author: "Igor Tatarinov"
 date: "2019-09-24"
 ---
 

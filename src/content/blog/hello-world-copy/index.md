@@ -2,7 +2,7 @@
 title: "Hello World"
 tags: ["Hello", "World", "First", "Post"]
 description: "999"
-author: "John Doe"
+author: "Igor Tatarinov"
 date: "2020-05-12"
 ---
 
