@@ -2,18 +2,20 @@ import React from "react"
 import { graphql } from "gatsby"
 import { PageLayout, PageTitle, CertificateLink } from "../components"
 import { SEO, Utils } from "../utils"
-import Container from "react-bootstrap/Container"
+import { Container, Col, Row } from "react-bootstrap"
 
 //modeled after blog.js
 export default ({ data }) => {
   const allFeaturedImages = data.allFile.edges || []
-  console.log(allFeaturedImages, 10)
 
   return (
     <PageLayout>
       <SEO title="Certificates" />
       <PageTitle title="Certificates" />
-      <Container className="text-left">
+      <Container
+        fluid
+        className="p-3 w-auto text-left d-flex flex-wrap justify-content-center"
+      >
         {allFeaturedImages.map(({ node }) => (
           <div key={node.id} className="p-3">
             <CertificateLink
@@ -22,31 +24,23 @@ export default ({ data }) => {
           </div>
         ))}
       </Container>
-
     </PageLayout>
   )
 }
 
 export const query = graphql`
   query {
-    allDirectory(filter: {relativePath: {eq: "content/certificates"}}) {
+    allFile(filter: {extension: {eq: "jpg"}, dir: {regex: "/certificates/"}}) {
       edges {
         node {
           id
-        }
-      }
-    }
-    allFile(filter: {extension: {eq: "jpg"}}) {
-      edges {
-        node {
           childImageSharp {
-            fluid(maxWidth: 400) {
+            fluid(maxWidth:400) {
               ...GatsbyImageSharpFluid
             }
           }
-          relativePath
         }
       }
-    }
+    } 
   }
 `
