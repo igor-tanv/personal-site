@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 import Card from "react-bootstrap/Card"
 
@@ -7,7 +6,7 @@ import Card from "react-bootstrap/Card"
 export default props => {
   return (
     <Card className="card-container">
-      <Card.Img as={Img} fluid={props.featuredImage} className="h-50" />
+      <Card.Img as={Img} fluid={props.featuredImage} />
     </Card>
   )
 }

@@ -22,7 +22,7 @@ export default ({ data }) => {
         />
         {unemployed && (
           <p className="mt-2">
-            <b> Hey! I am looking for new opportunities :)</b>
+            <b>Currently looking for new opportunities</b>
           </p>
         )}
         <Container className="py-0 my-0">

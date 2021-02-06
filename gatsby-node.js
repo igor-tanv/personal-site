@@ -24,7 +24,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-  // graphql function call returns a promise
   const { createPage } = actions
   const result = await graphql(`
     query {
@@ -48,7 +47,6 @@ exports.createPages = async ({ graphql, actions }) => {
         path: node.fields.slug,
         component: path.resolve(node.fields.templatePath),
         context: {
-          //   Data passed to context is available in page queries as graphql variables
           slug: node.fields.slug,
           templatePath: node.fields.templatePath,
         },
