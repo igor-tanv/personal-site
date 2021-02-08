@@ -16,16 +16,15 @@ export default ({ data }) => {
 
   const {
     author,
-    occupation,
+    occupation_one,
+    occupation_two,
     readingList,
-    showsList,
     designations,
     unemployed,
   } = data.site.siteMetadata
   const { toString } = useContext(ThemeContext)
 
   const bookLinks = readingList.map(book => MediaLink(book))
-  const showLinks = showsList.map(show => MediaLink(show))
 
   return (
     <PageLayout>
@@ -49,31 +48,19 @@ export default ({ data }) => {
             ))}
           </p>
           <p className="i-5 mt-4 pt-2">
-            Hello there! My name is <b>{`${author}`}</b>. I am a&nbsp;
-            <a
-              href="https://www.dictionary.com/e/fictional-characters/padawan/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              padawan
-            </a>
-            &nbsp;
-            <b>{occupation}</b> discovering the ways of the code. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+            Hello everybody! My name is <b>{`${author}`}</b>. I am a&nbsp;
+            <b>{occupation_one}</b> and <b>{occupation_two}</b> who is constantly looking
+            for new growth opportunities.
+            I like to split my time between developing software, practicing martial arts,
+            improving my sales skills, competing in combat sports,
+            reading about theoretical physics, traveling
+            to places not yet spoiled by tourism and learning how to hold a pair of chopsticks.
           </p>
           <p className="i-5">
-            In my spare time, Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p className="i-5">
-            Check out my <Link to="/projects">projects</Link> to see what I've
-            been up to! Or check out my <Link to="/blog">blog</Link> to see
-            what's recently caught my eye!
+            I created this website simply as a canvas to showcase my different interests.
+            Check out my <Link to="/projects">projects</Link> to see some of my work!
+            Or check out my <Link to="/blog">blog</Link> for some random reflections
+            on the my jounrey thus far.
           </p>
         </article>
         <article className="w-75 m-auto">
@@ -102,16 +89,6 @@ export default ({ data }) => {
             Here are a couple of books from my reading list:
           </h5>
           <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{bookLinks}</ul>
-          <h5 className="watch-list-title pt-4">
-            Here are a couple of shows from my watch list:
-          </h5>
-          <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{showLinks}</ul>
-          <h5 className="watch-list-title pt-4">
-            Here are a couple of movies from my watch list:
-          </h5>
-          <p>
-            <i>...waaaay too many to list.</i>
-          </p>
         </article>
       </Container>
     </PageLayout>
@@ -123,15 +100,11 @@ export const query = graphql`
     site {
       siteMetadata {
         unemployed
-        occupation
+        occupation_one
+        occupation_two
         author
         designations
         readingList {
-          title
-          author
-          link
-        }
-        showsList {
           title
           author
           link

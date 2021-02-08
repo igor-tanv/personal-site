@@ -7,7 +7,7 @@ import { Container, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ data }) => {
-  const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
+  const { unemployed, firstName, lastName, occupation_one, occupation_two } = data.site.siteMetadata
   const { dark } = useContext(ThemeContext)
   return (
     <PageLayout>
@@ -37,8 +37,8 @@ export default ({ data }) => {
           </h1>
           <p>
             <i>
-              {occupation} by day,&nbsp;
-              {dark ? `Imperial enforcer by night` : `Rebel scum by night`}
+              {occupation_two}, &nbsp;
+              {dark ? `Real Martial Artist` : `Software Engineer`}
             </i>
           </p>
         </Container>
@@ -119,7 +119,8 @@ export const query = graphql`
         unemployed
         firstName
         lastName
-        occupation
+        occupation_one
+        occupation_two
       }
     }
   }

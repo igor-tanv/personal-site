@@ -1,18 +1,13 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
 
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
     title: `Igor Tatarinov`,
     author: `Igor Tatarinov`,
     firstName: `Igor`,
     lastName: `Tatarinov`,
     description: `Igor Tatarinov's personal site`,
-    occupation: `Software Engineer`,
+    occupation_one: `Software Engineer`,
+    occupation_two: `Business Development Manager`,
     keywords: [`Igor`, `Tatarinov`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
@@ -37,23 +32,6 @@ module.exports = {
         title: `The Gene: An Intimate History`,
         author: `Siddhartha Mukeherjee`,
         link: `https://www.goodreads.com/book/show/27276428-the-gene`,
-      },
-    ],
-    showsList: [
-      {
-        title: `Avatar: The Last Airbender`,
-        author: `Micheal DiMartino, Bryan Konietzko`,
-        link: `https://www.imdb.com/title/tt0417299/`,
-      },
-      {
-        title: `Love, Death & Robots`,
-        author: `Tim Miller`,
-        link: `https://www.imdb.com/title/tt9561862/`,
-      },
-      {
-        title: `Star Wars: The Clone Wars`,
-        author: `George Lucas, Dave Filoni`,
-        link: `https://www.imdb.com/title/tt0458290/`,
       },
     ],
   },
