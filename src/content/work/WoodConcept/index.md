@@ -11,7 +11,7 @@ endDate: "2021-02-01"
 
 * Brought in 4 new customers over a 5 month period for an annual aggregate buying volume of \$350,000.</p>
 
-* Resolved technical issues and design issues on company website.</p>
+* Performed diagnostics on company website and resolved common problems like CORS Request Errors.</p>
 
 * Collaborated with operations team to develop a sales pipeline and a process for filtering quality prospects.</p>
 
