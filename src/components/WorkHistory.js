@@ -4,6 +4,7 @@ import { Container, Row, Col, Badge } from "react-bootstrap"
 
 const CompanyCard = ({ frontmatter, image }) => {
   const { company, position, startDate, endDate, location } = frontmatter
+  console.log(startDate, 7)
   return (
     <Container fluid className="m-auto work-history">
       <Img
