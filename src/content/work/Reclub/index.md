@@ -2,7 +2,7 @@
 company: "Reclub"
 location: "HCMC, Vietnam"
 position: "Back-End Developer"
-tags: ["React", "Nodejs", "Typescript", "MySQL"]
+tags: ["React", "Koa", "Nodejs", "Typescript", "MySQL"]
 startDate: "2019-07-15"
 endDate: "2020-10-01"
 ---
