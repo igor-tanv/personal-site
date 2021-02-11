@@ -1,5 +1,5 @@
 ---
-title: "The Lonely Path"
+title: "Self Education"
 tags: ["self", "education", "focus", "experience"]
 description: "Lessons learned from self direction"
 author: "Igor Tatarinov"
