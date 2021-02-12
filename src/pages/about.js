@@ -50,16 +50,18 @@ export default ({ data }) => {
           <p className="i-5 mt-4 pt-2">
             Hello everybody! My name is <b>{`${author}`}</b>. I am a&nbsp;
             <b>{occupation_one}</b> and <b>{occupation_two}</b> who is constantly looking
-            for new growth opportunities.
-            I like to split my time between developing software, practicing martial arts,
+            for new opportunities to facilitate growth. I am passionate about delivering results and
+            contributing to the bottom line of my company.
+            My time is usually split between developing software, practicing martial arts,
             improving my sales skills, competing in combat sports,
-            reading about theoretical physics, traveling
+            trying to understand theoretical physics, traveling
             to places not yet spoiled by tourism and learning how to hold a pair of chopsticks.
           </p>
           <p className="i-5">
-            I created this website simply as a canvas to showcase my different interests.
-            Check out my <Link to="/resume">resume</Link> to see some of my work!
-            Or check out my <Link to="/blog">blog</Link> to read some of random reflections on this journey so far.
+            I created this site to showcase some of my different interests.
+            Check out my <Link to="/resume">resume</Link> to see some of my work
+            or check out my <Link to="/blog">blog</Link> to read some of my random reflections
+            on this journey so far.
           </p>
         </article>
         <article className="w-75 m-auto">
@@ -84,10 +86,10 @@ export default ({ data }) => {
             </>
           )}
           <hr />
-          <h5 className="watch-list-title pt-4">
+          <h5 className="watch-list-title pt-8">
             Here are a couple of books from my reading list:
           </h5>
-          <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{bookLinks}</ul>
+          <ul style={{ fontSize: "1.2rem", listStyle: "none" }}>{bookLinks}</ul>
         </article>
       </Container>
     </PageLayout>

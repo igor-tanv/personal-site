@@ -19,19 +19,19 @@ module.exports = {
     ],
     readingList: [
       {
-        title: `Sapiens: A Brief History of Humankind`,
-        author: `Yuval Noah Harari`,
-        link: `https://www.goodreads.com/book/show/23692271-sapiens`,
+        title: `The Intelling Investor`,
+        author: `Benjamin Graham`,
+        link: `https://www.goodreads.com/book/show/106835.The_Intelligent_Investor`,
       },
       {
-        title: `Behave: The Biology of Humans at our Best and Worst`,
-        author: `Robert Sapolsky`,
-        link: `https://www.goodreads.com/book/show/31170723-behave`,
+        title: `It Doesn't Have to be Crazy at Work`,
+        author: `David Heinemeier Hansson`,
+        link: `https://www.goodreads.com/book/show/38900866-it-doesn-t-have-to-be-crazy-at-work`,
       },
       {
-        title: `The Gene: An Intimate History`,
-        author: `Siddhartha Mukeherjee`,
-        link: `https://www.goodreads.com/book/show/27276428-the-gene`,
+        title: `Chronicles of the Crusades`,
+        author: `Jean de Joinville`,
+        link: `https://www.goodreads.com/book/show/409573.Chronicles_of_the_Crusades`,
       },
     ],
   },
