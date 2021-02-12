@@ -3,7 +3,7 @@ title: "Reflections on Sales"
 tags: ["Sales", "Marketing", "Closing"]
 description: "What it takes to be an effective salesman"
 author: "Igor Tatarinov"
-date: "2020-09-24"
+date: "2021-01-24"
 ---
 
 "Oh this is a sales call, I'm sorry we're not interested". I remember getting this response from one receptionist before she even knew the product I was selling. These kind of responses were all too common when I first launched into my role as a Business Development Manager (BDM) at WoodConcept, a furniture export company based in Ho Chi Minh City. My job was simple: call the furniture retailers and wholesales in America and Australia, find out if they are importing products from Southeast Asia and see if we can work with them as their supplier. Simple yes, easy no.
