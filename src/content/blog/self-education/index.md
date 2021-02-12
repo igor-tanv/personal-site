@@ -1,5 +1,5 @@
 ---
-title: "Self Education"
+title: "Self Taught"
 tags: ["self", "education", "focus", "experience"]
 description: "Lessons learned from self direction"
 author: "Igor Tatarinov"

@@ -1,5 +1,5 @@
 ---
-title: "Reflections on Sales"
+title: "Reflection on Sales"
 tags: ["Sales", "Marketing", "Closing"]
 description: "What it takes to be an effective salesman"
 author: "Igor Tatarinov"
