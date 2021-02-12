@@ -8,7 +8,7 @@ module.exports = {
     description: `Igor Tatarinov's personal site`,
     occupation_one: `Software Engineer`,
     occupation_two: `Business Development Manager`,
-    keywords: [`Igor`, `Tatarinov`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`],
+    keywords: [`Igor`, `Tatarinov`, `Personal`, `Blog`, `Resume`, `Work`],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: true,

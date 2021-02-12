@@ -58,9 +58,8 @@ export default ({ data }) => {
           </p>
           <p className="i-5">
             I created this website simply as a canvas to showcase my different interests.
-            Check out my <Link to="/projects">projects</Link> to see some of my work!
-            Or check out my <Link to="/blog">blog</Link> for some random reflections
-            on the my jounrey thus far.
+            Check out my <Link to="/resume">resume</Link> to see some of my work!
+            Or check out my <Link to="/blog">blog</Link> to read some of random reflections on this journey so far.
           </p>
         </article>
         <article className="w-75 m-auto">

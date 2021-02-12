@@ -1,7 +1,7 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-const requiresTemplate = [`blog`, `projects`, 'certificates']
+const requiresTemplate = [`blog`, 'certificates']
 
 const getContentType = node =>
   node.fileAbsolutePath.match(/content(.*)/)[0].split(`/`)[1]

@@ -19,7 +19,7 @@ const CompanyCard = ({ frontmatter, image }) => {
         <h5 className="text-muted">{location}</h5>
         <h4 className="mt-2">{position}</h4>
         <h5 className="text-muted mt-2">
-          {startDate}-{endDate}
+          {startDate}-{endDate === "January 2100" ? "Present" : endDate}
         </h5>
       </div>
     </Container>
