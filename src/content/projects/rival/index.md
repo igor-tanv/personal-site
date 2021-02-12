@@ -1,10 +1,7 @@
 ---
-company: "Rival"
-location: "HCMC, Vietnam"
-position: "Creator"
-tags: ["ReactJs", "Express", "Nodejs", "Javascript", "MongoDB", "Linode"]
-startDate: "2019-11-15"
-endDate: "2021-03-01"
+title: "Rival"
+tags: ["MongoDB", "Nodejs", "ReactJs", "Express", "Linode"]
+date: "2020-05-13"
 ---
 
 - Designed and developed a fully functional MERN stack web application to decentralize local grappling competitions.</p>

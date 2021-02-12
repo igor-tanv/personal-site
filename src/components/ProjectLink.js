@@ -11,7 +11,10 @@ export default ({ excerpt, featuredImages, tags, title, to }) => {
           {featuredImages &&
             featuredImages.map(image => (
               <Col key={image.src}>
-                <Img fluid={image} className="m-auto w-75" />
+                <Img fluid={image} className="m-auto" style={{
+                  maxHeight: "15vmax",
+                  maxWidth: "15vmax",
+                }} />
               </Col>
             ))}
         </Row>
