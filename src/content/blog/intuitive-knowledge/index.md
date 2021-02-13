@@ -3,7 +3,7 @@ title: "Intuitive Knowledge"
 tags: ["intuition", "knowledge", "learning"]
 description: "How intuition is built"
 author: "Igor Tatarinov"
-date: "2020-09-12"
+date: "2020-11-11"
 ---
 
 The topic of intuition has always held a deep interest for me. It's that breakthrough "aha!" moment. In my experience it happens randomly and only after a long and frustrating period of trying to learn something new. I remember when I first started at Reclub I was overwhelmed by the amount of new information I had to learn. Everything was difficult and I saw senior engineers completing tasks in 15 minutes that would take me a day. Going to them for help wasn't much help actually. They would give me an answer but I could not wrap my head around HOW they got to that answer. Watching them work it felt like they would look at the problem and the right answer would magically appear in the their mind. The deep knowledge they possessed meant they abstracted away many things which a beginner didn't even know.

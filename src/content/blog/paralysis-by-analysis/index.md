@@ -3,7 +3,7 @@ title: "Paralysis By Analysis"
 tags: ["productivity", "deep-dive", "knowledge", "accomplishment"]
 description: "999"
 author: "Igor Tatarinov"
-date: "2020-10-12"
+date: "2020-12-12"
 ---
 
 All too often during the course of creating new features for my app I am constantly confronted with the issue of multiple options to solve problems and their inherent tradeoffs. It was something I really struggled with in the beginning of my career as my knowledge base was quite small and anytime I asked experienced developers for advice I would often be left with more questions than answers.

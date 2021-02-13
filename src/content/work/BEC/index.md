@@ -2,7 +2,7 @@
 company: "Business English Course"
 location: "HCMC, Vietnam"
 position: "Head Teacher"
-tags: []
+tags: ["Excel", "Power-Point", "Microsoft OneDrive"]
 startDate: "2015-12-15"
 endDate: "2019-05-01"
 ---

@@ -1,5 +1,5 @@
 ---
-company: "Wells Fargo"
+company: "Wells Fargo National Bank"
 location: "Charlotte, NC, USA"
 position: "Securities Administration Services Analyst"
 tags: ["LoanIQ", "Excel", "AFS"]

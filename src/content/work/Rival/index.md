@@ -9,11 +9,9 @@ endDate: "2100-01-01"
 
 - Designed and developed a fully functional MERN stack web application to decentralize local grappling competitions.</p>
 
-* Configured Linode Linux Server for hosting including an 3rd party SMTP mail service provider.</p>
+* Communicated with users and applied user feedback as the backbone for product iteration.</p>
 
-* Configured NGINX proxy and Cloudflare for SSL Certificates</p>
+* Deployed the application on Linode which included configuring NGNIX , Cloudflare and established an integration pipeline from Github.</p>
 
-* Configured an integration pipeline between Github and Linode.</p>
-
-* Collaborated with UI and Front End specialists to implement and develop a mobile friendly UI.</p>
+* Collaborated with UI and Front End specialists to design and implement a mobile friendly UI</p>
 </p>
