@@ -130,7 +130,7 @@ $themes: (
 .card-container {
   @include themify($themes) {
     width: 25rem;
-    height: 23rem;
+    // height: 23rem;
     text-decoration-color: themed("hrefColor");
     & * {
       background: themed("cardBackground");
