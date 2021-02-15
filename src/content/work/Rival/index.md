@@ -11,7 +11,7 @@ endDate: "2100-01-01"
 
 * Communicated with users and applied user feedback as the backbone for product iteration.</p>
 
-* Deployed the application on Linode which included configuring NGNIX , Cloudflare and established an integration pipeline from Github.</p>
+* Deployed the application on Linode which included configuring NGNIX, Cloudflare and established an integration pipeline from Github.</p>
 
 * Collaborated with UI and Front End specialists to design and implement a mobile friendly UI</p>
 </p>

@@ -19,7 +19,7 @@ module.exports = {
     ],
     readingList: [
       {
-        title: `The Intelling Investor`,
+        title: `The Intelligent Investor`,
         author: `Benjamin Graham`,
         link: `https://www.goodreads.com/book/show/106835.The_Intelligent_Investor`,
       },
