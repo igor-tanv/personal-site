@@ -79,4 +79,5 @@ module.exports = {
       },
     },
   ],
+  pathPrefix: "/personal-site"
 }

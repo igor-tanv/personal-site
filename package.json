@@ -14,7 +14,7 @@
     "clean": "gatsby clean",
     "clean-serve": "gatsby clean && gatsby build && gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
