@@ -138,6 +138,11 @@ $themes: (
   }
 }
 
+.card-container-certificate {
+  @extend .card-container;
+  height: unset !important;
+}
+
 .blog-filter {
   @include themify($themes) {
     & input {
