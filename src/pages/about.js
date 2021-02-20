@@ -58,7 +58,7 @@ export default ({ data }) => {
             to places not yet spoiled by tourism and learning how to hold a pair of chopsticks.
           </p>
           <p className="i-5">
-            I created this site to showcase some of my different interests.
+            I created this site to showcase some of my different interests both personal and professional.
             Check out my <Link to="/resume">resume</Link> to see some of my work
             or check out my <Link to="/blog">blog</Link> to read some of my random reflections
             on this journey so far.
