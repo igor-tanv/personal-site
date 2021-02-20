@@ -27,8 +27,8 @@ export default ({ data }) => {
         )}
         <Container className="py-0 my-0">
           <h1
+            className="fullname"
             style={{
-              fontSize: "5rem",
               color: "black",
             }}
           >

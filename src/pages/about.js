@@ -38,7 +38,7 @@ export default ({ data }) => {
           src={`../../icons/luke-${toString()}.png`}
           alt={author}
         />
-        <article className="w-75 m-auto pt-2 text-justify">
+        <article className="about-content w-75 m-auto pt-2 text-justify">
           <p className="text-center">
             {designations.map((attr, i) => (
               <span key={attr}>

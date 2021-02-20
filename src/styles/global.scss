@@ -109,8 +109,74 @@ body {
 /** Certificate Modal Styling START */
 
 .modal-certificate {
-  width: 75%;
-  max-width: 75%;
+  @media (min-width: 576px) {
+    width: 75%;
+    max-width: 75%;
+  }
 }
 
 /** Certificate Modal Styling END */
+
+/** About content Styling START */
+
+.about-content {
+  @media (max-width: 768px) {
+    width: 95% !important;
+  }
+  @media (max-width: 576px) {
+    width: 100% !important;
+  }
+  @media (max-width: 480px) {
+    width: 90% !important;
+  }
+  @media (max-width: 375px) {
+    width: 100% !important;
+    font-size: 0.95rem;
+  }
+}
+
+/** About content Styling END */
+
+/** Navbar Styling START */
+
+.navbar-collapse-backdrop {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+/** Navbar Styling END */
+
+/** Home page Styling START */
+
+.fullname {
+  @media (max-width: 576px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 480px) {
+    font-size: 3rem;
+  }
+  @media (max-width: 375px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 320px) {
+    font-size: 2rem;
+  }
+}
+
+/** Home page Styling END */
+
+/** Blog page Styling START */
+
+.blog-card {
+  @media (max-width: 576px) {
+    width: unset !important;
+    height: unset !important;
+  }
+}
+
+/** Blog page Styling END */
