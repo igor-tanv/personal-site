@@ -141,6 +141,9 @@ $themes: (
 .card-container-certificate {
   @extend .card-container;
   height: unset !important;
+  @media (max-width: 420px) {
+    width: 100vw !important;
+  }
 }
 
 .blog-filter {

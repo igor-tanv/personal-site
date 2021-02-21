@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react"
 import ThemeContext from "../utils/theme"
 import { Navbar, Nav, Form } from "react-bootstrap"
 import { Link } from "gatsby"
@@ -7,16 +7,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default () => {
   const { dark, toggleDark, toString } = useContext(ThemeContext)
+  const [openedNavMenu, setOpenedNavMenu] = useState(false)
+  let navbarToggleEle = null;
   return (
-    <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
-      <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
+    <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md" onToggle={() => setOpenedNavMenu(!openedNavMenu)}>
+      <Navbar.Brand as={Link} to="/">
         <FontAwesomeIcon
           icon={["fab", `${dark ? "empire" : "rebel"}`]}
           className={`brand-icon ${dark ? "empire" : "rebel"}`}
           title="Home"
         />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" ref={ele => navbarToggleEle = ele}/>
       <Navbar.Collapse
         id="responsive-navbar-nav"
         className="justify-content-end"
@@ -45,6 +47,9 @@ export default () => {
             />
           </Form>
         </Nav>
+        {openedNavMenu && <div className="navbar-collapse-backdrop" onClick={() => {
+          if (navbarToggleEle) navbarToggleEle.click()
+        }}/>}
       </Navbar.Collapse>
     </Navbar>
   )
