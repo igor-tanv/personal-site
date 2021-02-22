@@ -1,13 +1,16 @@
 import React, { Component } from "react"
 import { Howl } from "howler"
 
+import darthvader from "../../static/sounds/Darth-Vader.mp3"
+import r2d2 from "../../static/sounds/R2-D2.mp3"
+
 const vaderAudio = new Howl({
-  src: ["../../sounds/Darth-Vader.mp3"],
+  src: [darthvader],
   volume: 0.2,
   format: ["mp3"],
 })
 const r2d2Audio = new Howl({
-  src: ["../../sounds/R2-D2.mp3"],
+  src: [r2d2],
   volume: 0.2,
   format: ["mp3"],
 })
@@ -15,7 +18,7 @@ const r2d2Audio = new Howl({
 const defaultState = {
   dark: false,
   toString: () => `light`,
-  toggleDark: () => {},
+  toggleDark: () => { },
 }
 
 const ThemeContext = React.createContext(defaultState)
