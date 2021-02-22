@@ -5,6 +5,8 @@ import { PageLayout } from "../components"
 import { SEO } from "../utils"
 import { Container, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import darthvader from "../../static/icons/darth-vader.png"
+import r2d2 from "../../static/icons/r2-d2.png"
 
 export default ({ data }) => {
   const { unemployed, firstName, lastName, occupation_one, occupation_two } = data.site.siteMetadata
@@ -17,7 +19,7 @@ export default ({ data }) => {
           width="150"
           height="150"
           fluid
-          src={dark ? `../../icons/darth-vader.png` : `../../icons/r2-d2.png`}
+          src={dark ? darthvader : r2d2}
           alt={dark ? "Darth Vader" : "R2-D2"}
         />
         {unemployed && (

@@ -3,6 +3,7 @@ import { PageLayout, PageTitle } from "../components"
 import { Container, Image } from "react-bootstrap"
 import { Link, graphql } from "gatsby"
 import { ThemeContext, SEO } from "../utils"
+import darthvader from "../../static/icons/darth-vader.png"
 
 export default ({ data }) => {
   const MediaLink = ({ title, author, link }) => (
@@ -35,7 +36,7 @@ export default ({ data }) => {
           rounded
           width="140"
           height="140"
-          src={`../../icons/luke-${toString()}.png`}
+          src={darthvader}
           alt={author}
         />
         <article className="about-content w-75 m-auto pt-2 text-justify">
