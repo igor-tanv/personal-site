@@ -33,7 +33,7 @@ export default ({ html, frontmatter, image }) => {
         <Col className="col-md-4 col-12">
           <CompanyCard frontmatter={frontmatter} image={image} />
         </Col>
-        <Col className="col-md-8 col-12">
+        <Col className="job-description col-md-8 col-12">
           <p
             className="text-justify mt-2"
             dangerouslySetInnerHTML={{ __html: html }}

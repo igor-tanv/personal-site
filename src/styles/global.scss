@@ -180,3 +180,18 @@ body {
 }
 
 /** Blog page Styling END */
+
+/** Resume page Styling START */
+
+.job-description {
+  @media (max-width: 576px) {
+    font-size: 0.9rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    ul {
+      padding-inline-start: 10px;
+    }
+  }
+}
+
+/** Resume page Styling END */
