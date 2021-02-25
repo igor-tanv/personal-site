@@ -7,6 +7,7 @@ import { Container, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import darthvader from "../../static/icons/darth-vader.png"
 import r2d2 from "../../static/icons/r2-d2.png"
+import profile from "../../static/icons/profile.jpg"
 
 export default ({ data }) => {
   const { unemployed, firstName, lastName, occupation_one, occupation_two } = data.site.siteMetadata
@@ -19,8 +20,10 @@ export default ({ data }) => {
           width="150"
           height="150"
           fluid
-          src={dark ? darthvader : r2d2}
-          alt={dark ? "Darth Vader" : "R2-D2"}
+          src={profile}
+          alt={firstName + ' ' + lastName}
+        // src={dark ? darthvader : r2d2}
+        // alt={dark ? "Darth Vader" : "R2-D2"}
         />
         {unemployed && (
           <p className="mt-2">

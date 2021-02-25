@@ -3,7 +3,6 @@ import { PageLayout, PageTitle } from "../components"
 import { Container, Image } from "react-bootstrap"
 import { Link, graphql } from "gatsby"
 import { SEO } from "../utils"
-import darthvader from "../../static/icons/profile.jpg"
 
 export default ({ data }) => {
   const MediaLink = ({ title, author, link }) => (
@@ -31,14 +30,6 @@ export default ({ data }) => {
       <SEO title="About Me" />
       <PageTitle title="About Me" />
       <Container>
-        <Image
-          rounded
-          fluid
-          width="140"
-          height="140"
-          src={darthvader}
-          alt={author}
-        />
         <article className="about-content w-75 m-auto pt-2 text-justify">
           <p className="text-center">
             {designations.map((attr, i) => (
