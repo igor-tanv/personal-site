@@ -4,7 +4,7 @@
   "description": "A personal site built on the bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "https://igor-tanv.github.io/personal-site",
+  "homepage": "https://igor-tanv.github.io",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -14,7 +14,7 @@
     "clean": "gatsby clean",
     "clean-serve": "gatsby clean && gatsby build && gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
