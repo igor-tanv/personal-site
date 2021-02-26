@@ -75,13 +75,13 @@ edges {
       }
 ```
 
-Notice that `width` is the only argument passed to childImageSharp. By default Gatsby does not return the full image resolution so the image rendered on your site may look blurred and not clear. To get around this problem, you can pass `quality` as the second argument:
+Notice that `width` is the only argument passed to childImageSharp. By default Gatsby compresses the image quality to 50 so your file may look blurred and not clear. To get around this problem, pass `quality` as the second argument:
 
 ```
 edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 400, quality: 100) {
+            fluid(maxWidth: 400, quality: 90) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -90,7 +90,7 @@ edges {
       }
 ```
 
-This will ensure a full resolution of the image is returned.
+This will slow down the loading of your page by a small margin but the tradeoff is that the images will now look clear and sharp.
 
 At the time of this writing I am still in the process of modifying the site and there is lots more to do. I'll continue to make updates for any new issues after they are resolved. One step at a time :)
 
