@@ -79,5 +79,6 @@ module.exports = {
         showSpinner: true,
       },
     },
-  ]
+  ],
+  pathPrefix: "/personal-site"
 }
