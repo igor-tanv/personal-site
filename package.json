@@ -4,7 +4,7 @@
   "description": "A personal site built on the bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "https://igor-tanv.github.io",
+  "homepage": "https://igor-tanv.github.io/personal-site",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
