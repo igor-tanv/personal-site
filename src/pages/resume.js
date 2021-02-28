@@ -16,13 +16,13 @@ export default ({ data }) => {
       <SEO title="Resume" />
       <PageTitle title="Resume">
         &nbsp;
-        <a href={resume} target="_blank">
+        {/* <a href={resume} target="_blank">
           <FontAwesomeIcon
             style={{ fontSize: "2rem" }}
             icon={["fas", "file-download"]}
             className="icons file"
           />
-        </a>
+        </a> */}
       </PageTitle>
       <Container className="mt-5 pt-3" fluid>
         {history.map(({ node }) => (
