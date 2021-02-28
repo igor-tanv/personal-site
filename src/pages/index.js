@@ -5,9 +5,9 @@ import { PageLayout } from "../components"
 import { SEO } from "../utils"
 import { Container, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import darthvader from "../../static/icons/darth-vader.png"
-import r2d2 from "../../static/icons/r2-d2.png"
 import profile from "../../static/icons/profile.jpg"
+
+import resume from "../../static/resume.pdf"
 
 export default ({ data }) => {
   const { unemployed, firstName, lastName, occupation_one, occupation_two } = data.site.siteMetadata
@@ -22,8 +22,6 @@ export default ({ data }) => {
           fluid
           src={profile}
           alt={firstName + ' ' + lastName}
-        // src={dark ? darthvader : r2d2}
-        // alt={dark ? "Darth Vader" : "R2-D2"}
         />
         {unemployed && (
           <p className="mt-2">
@@ -82,7 +80,7 @@ export default ({ data }) => {
               title="e-mail"
             />
           </a>
-          <a href="../../resume.pdf" target="_blank" download>
+          <a href={resume} target="_blank" >
             <FontAwesomeIcon
               icon={["fas", "file-alt"]}
               className="icons file"

@@ -5,6 +5,8 @@ import { SEO, Utils } from "../utils"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Container from "react-bootstrap/Container"
 
+import resume from "../../static/resume.pdf"
+
 export default ({ data }) => {
   const history = data.allMarkdownRemark.edges || []
   const images = data.allFile.edges || []
@@ -14,7 +16,7 @@ export default ({ data }) => {
       <SEO title="Resume" />
       <PageTitle title="Resume">
         &nbsp;
-        <a href="../../resume.pdf" target="_blank" download>
+        <a href={resume} target="_blank">
           <FontAwesomeIcon
             style={{ fontSize: "2rem" }}
             icon={["fas", "file-download"]}
