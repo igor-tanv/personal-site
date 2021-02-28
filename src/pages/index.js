@@ -80,13 +80,6 @@ export default ({ data }) => {
               title="e-mail"
             />
           </a>
-          <a href={resume} target="_blank" >
-            <FontAwesomeIcon
-              icon={["fas", "file-alt"]}
-              className="icons file"
-              title="Resume"
-            />
-          </a>
         </div>
       </Container>
     </PageLayout>
