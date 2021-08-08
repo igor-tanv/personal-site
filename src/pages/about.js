@@ -42,8 +42,7 @@ export default ({ data }) => {
           <p className="i-5 mt-4 pt-2">
             Hello everybody! My name is <b>{`${author}`}</b>. I am a&nbsp;
             <b>{occupation_one}</b> and <b>{occupation_two}</b> who is constantly looking
-            to learn something new. I am passionate about delivering results and
-            contributing to the bottom line of my company.
+            to learn something new.
             My time is usually split between developing software, practicing martial arts,
             improving my sales skills, competing in combat sports,
             trying to understand theoretical physics, traveling
