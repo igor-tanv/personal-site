@@ -12,9 +12,17 @@ WORKDIR /app
 # Copy package.json and package-lock.json (if available)
 COPY package*.json ./
 
+# Clear the npm cache to ensure fresh dependencies
 RUN npm cache clean --force
 
-RUN apt-get update && apt-get install -y --fix-missing python3 make g++ libvips-dev bash && rm -rf /var/lib/apt/lists/*
+# Overwrite sources.list with valid Debian mirrors
+RUN echo "deb http://deb.debian.org/debian bullseye main contrib non-free" > /etc/apt/sources.list && \
+    echo "deb http://security.debian.org/debian-security bullseye-security main contrib non-free" >> /etc/apt/sources.list && \
+    echo "deb http://deb.debian.org/debian bullseye-updates main contrib non-free" >> /etc/apt/sources.list
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y python3 make g++ libvips-dev bash && rm -rf /var/lib/apt/lists/*
+
 
 # Confirm Python installation
 RUN python3 --version && which python3
